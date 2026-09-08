@@ -1,1 +1,9 @@
+RewriteEngine On
+ 
+# Force https:// et www. (domaine canonique) — évite que Google indexe
+# solidia-interim.fr / http://... comme une page en double du vrai site.
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\.solidia-interim\.fr$ [NC]
+RewriteRule ^(.*)$ https://www.solidia-interim.fr/$1 [L,R=301]
+ 
 ErrorDocument 404 /404.html
