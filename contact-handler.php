@@ -1,11 +1,11 @@
 <?php
 /**
  * Traitement du formulaire de contact — Solidia Interim
- * Envoie les demandes reçues vers contact@solidia-interim.fr
+ * Envoie les demandes reçues vers m.guilloux@solidia-interim.fr
  * Nécessite un hébergement supportant PHP (compatible hébergement mutualisé OVH).
  */
 
-$destinataire = "contact@solidia-interim.fr";
+$destinataire = "m.guilloux@solidia-interim.fr";
 
 // Honeypot anti-spam : champ invisible qui ne doit jamais être rempli par un humain
 if (!empty($_POST['site_web'] ?? '')) {
