@@ -190,8 +190,7 @@ section{ padding:clamp(3rem, 6vw, 5.5rem) 0; }
 .hero-blob{ display:none; }
 .hero-logo-mark{
   position:absolute; right:3%; top:50%; transform:translateY(-50%); height:62%;
-  filter:brightness(0) invert(1) opacity(.07); pointer-events:none; z-index:0;
-  isolation:isolate;
+  opacity:.07; pointer-events:none; z-index:0;
 }
 .hero .container{ position:relative; z-index:2; text-align:center; }
 .hero .kicker{ background:rgba(255,255,255,.1); color:var(--brand-lime); border-color:rgba(255,255,255,.25); }
